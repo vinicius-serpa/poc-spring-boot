@@ -13,6 +13,15 @@
 				<h1 class="panel-title">Product List</h1>
 			</div>
 			<div class="panel-body">
+			
+				<form class="form-inline" method="POST" style="margin: 20px 0" th:object="${product}" th:action="@{/products}">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Name" th:field="*{name}"/>
+						<input type="text" class="form-control" placeholder="Barcode" th:field="*{code}"/>
+						<button type="submit" class="btn btn-primary">Add</button>
+					</div>
+				</form>
+			
 				<table class="table">
 					<thead>
 						<tr>
