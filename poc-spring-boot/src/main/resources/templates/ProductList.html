@@ -4,8 +4,8 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width" />
 		<title>Product List</title>
-		<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
-		<link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}" rel="stylesheet"/>
+		<link th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" rel="stylesheet"/>
+		<link th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap-theme.min.css}" rel="stylesheet"/>
 	</head>
 	<body>
 		<div class="panel panel-default" style="margin: 10px">
@@ -23,7 +23,7 @@
 					<tbody>
 						<tr th:each="product : ${products}">
 							<td th:text="${product.name}"></td>
-							<td th:text="${product.barcode}"></td>
+							<td th:text="${product.code}"></td>
 						</tr>
 					</tbody>
 				</table>
